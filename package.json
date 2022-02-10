@@ -1,0 +1,15 @@
+{
+  "name": "trillo",
+  "version": "0.1.0",
+  "description": "Landing page for Trillo",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "sass sass/main.scss css/style.css -w --style compressed"
+  },
+  "author": "Anthony Azzati",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
