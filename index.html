@@ -11,11 +11,46 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-    <title>trillo &mdash; Your all-in-one booking app</title>
+    <title>TRILLO &mdash; Your all-in-one booking app</title>
   </head>
   <body>
     <div class="container">
-      <header class="header">Header part</header>
+      <header class="header">
+        <img src="./img/logo.png" alt="TRILLO logo" class="header__logo" />
+
+        <form action="#" class="form">
+          <input type="text" class="form__input" placeholder="Search hotels" />
+          <button class="form__button">
+            <svg class="form__search-icon">
+              <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-navigation">
+          <div class="user-navigation__icon-wrapper">
+            <svg class="user-navigation__icon">
+              <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-navigation__notification">7</span>
+          </div>
+          <div class="user-navigation__icon-wrapper">
+            <svg class="user-navigation__icon">
+              <use xlink:href="./img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-navigation__notification">13</span>
+          </div>
+          <div class="user-navigation__user">
+            <img
+              src="./img/user-4.jpg"
+              alt="User photo"
+              class="user-navigation__user-photo"
+            />
+            <div class="user-navigation__user-name">Kayne</div>
+          </div>
+        </nav>
+      </header>
+
       <div class="content">
         <nav class="sidebar">Sidebar navigation</nav>
         <main class="hotel-view">Hotel view</main>
