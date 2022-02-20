@@ -11,6 +11,11 @@
   justify-content: center;
   flex: 0 0 40%;
 
+  @media only screen and (max-width: 31.25em) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input {
     margin-right: -3.5rem;
     padding: 0.7rem 2rem;

@@ -4,11 +4,24 @@
   list-style: none;
   font-size: 1.4rem;
 
+  @media only screen and (max-width: 56.75em) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: 56.75em) {
+        margin: 0;
+      }
+    }
+
+    @media only screen and (max-width: 56.75em) {
+      flex: 1;
     }
   }
 
@@ -46,6 +59,16 @@
     color: var(--clr-grey-light-1);
     text-decoration: none;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 56.75em) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
@@ -53,6 +76,12 @@
     width: 1.75rem;
     height: 1.75rem;
     fill: currentColor;
+
+    @media only screen and (max-width: 37.5em) {
+      margin: 0 0 0.7rem 0;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
@@ -62,4 +91,8 @@
   padding: 2.5rem;
   color: var(--clr-grey-light-4);
   font-size: 1.3rem;
+
+  @media only screen and (max-width: 56.75em) {
+    display: none;
+  }
 }
